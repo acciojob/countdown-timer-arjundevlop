@@ -38,7 +38,7 @@ function startCountDown (){
     
     // Display the remaining time and the countdown end time
     countdownDisplay.textContent = "Time remaining: " + remainingTime;
-    endTimeDisplay.textContent = "Countdown ends at: " + countdownEndTime.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+    endTimeDisplay.textContent = countdownEndTime.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
   }, 1000);
 }
 	
